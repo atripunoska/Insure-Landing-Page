@@ -15,6 +15,15 @@ body {
     margin: auto;
 }
 
+
+/**** HELPERS ***/
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
 #hero {
     background-image: url(../images/bg-pattern-intro-right-desktop.svg);
     background-size: 370px 500px;
@@ -28,7 +37,29 @@ body {
 .hero_leadText {
     width:50%;
 }
+.hero_leadText h1 {
+     font-size:80px;
+   font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height:1;
+}
+.hero_leadText p {
+    font-family: 'Karla',sans-serif;
+    line-height:1.4;
+    font-size:18px;
+}
+.hero_leadImage {
+    padding-top:50px;
+}
 
+.btn {
+    background: transparent;
+    text-transform: uppercase;
+    color: #000;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    font-family: 'Karla',sans-serif;
+}
 @media (max-width:1600px){
     .container {
         width:1140px;
