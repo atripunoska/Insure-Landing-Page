@@ -57,12 +57,24 @@ nav a {
   text-transform: uppercase;
   color: hsl(273, 4%, 51%);
   font-weight: 500;
+  transition: all 250ms ease-in-out;
+}
+
+nav a:active,
+nav a:hover,
+nav a:focus {
+  color: #000;
 }
 nav .btn {
   padding: 10px 15px;
   font-size: 15px;
 }
-
+nav .btn:hover,
+nav .btn:active,
+nav .btn:focus {
+  background: #000;
+  color: #fff;
+}
 #hero {
   height: 700px;
   background-color: hsl(256, 26%, 20%);
@@ -131,8 +143,16 @@ nav .btn {
 .btn-white-outline {
   border-color: #fff;
   color: #fff;
+  transition: all 250ms ease-in-out;
 }
 
+.btn-white-outline:active,
+.btn-white-outline:hover,
+.btn-white-outline:focus {
+  background: #fff;
+  color: hsl(256, 26%, 20%);
+  cursor: pointer;
+}
 #about-us {
   margin: 270px 0 190px 0;
   position: relative;
@@ -209,8 +229,8 @@ nav .btn {
 }
 
 #find-out-more button {
-  border-color: #fff;
-  color: #fff;
+  /* border-color: #fff;
+  color: #fff; */
   font-size: 20px;
   font-weight: 400;
   z-index: 2;
@@ -268,6 +288,11 @@ footer h6.title {
 
 footer .list-inline > li > img {
   padding: 0 5px;
+  transition: all 250ms ease-in-out;
+}
+footer .list-inline > li > img:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 footer .list-inline > li:last-child > img {
   padding: 0 0px 0 5px;
