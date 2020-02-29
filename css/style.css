@@ -206,6 +206,7 @@ nav .btn:focus {
   position: relative;
   color: #fff;
   align-items: center;
+  width: inherit;
 }
 
 #find-out-more .container::after {
@@ -297,8 +298,132 @@ footer .list-inline > li > img:hover {
 footer .list-inline > li:last-child > img {
   padding: 0 0px 0 5px;
 }
-@media (max-width: 1600px) {
+
+@media (max-width: 1400px) {
   .container {
-    width: 1140px;
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: auto;
+    margin: 0;
+    padding: 0 20px;
+  }
+  #hero::before {
+    background-size: 315px 450px;
+    width: 315px;
+    height: 450px;
+  }
+
+  .hero_leadImage {
+    padding-top: 125px;
+    width: 50%;
+  }
+  .hero_leadText h1 {
+    font-size: 60px;
+  }
+  #find-out-more h1 {
+    font-size: 50px;
+  }
+  #find-out-more {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  #hero .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero_leadImage {
+    padding-top: 25px;
+    width: auto;
+    margin: auto;
+  }
+  .hero_leadText {
+    width: auto;
+    display: block;
+    margin-top: 55px;
+  }
+  header img {
+    height: 17px;
+  }
+}
+
+@media (max-width: 560px) {
+  #hero .container {
+    padding: 0;
+  }
+  .hero_leadImage {
+    padding-top: 0;
+  }
+  .hero_leadImage img {
+    width: 100%;
+  }
+  .hero_leadText {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .hero_leadText h1 {
+    font-size: 45px;
+  }
+  .hero_leadText h1::before {
+    display: none;
+  }
+
+  #about-us {
+    margin: 200px 0 190px 0;
+  }
+  #about-us h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #about-us h1::before {
+    right: 0;
+    margin: auto;
+  }
+
+  #about-us .d-flex {
+    flex-direction: column;
+  }
+  #about-us .d-flex .item {
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+  #about-us .d-flex .item:nth-of-type(2) {
+    margin: 0 0 50px 0;
+  }
+
+  #find-out-more .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px 40px 0;
+  }
+  #find-out-more h1 {
+    font-size: 45px;
+  }
+  .flex-sm-column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+  footer .column {
+    text-align: center;
+  }
+  footer h6.title {
+    margin: 30px 0;
   }
 }
