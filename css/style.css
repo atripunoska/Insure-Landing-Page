@@ -41,31 +41,58 @@ ul.list-inline li {
   display: inline-block;
 }
 #hero {
-  background-image: url(../images/bg-pattern-intro-right-desktop.svg);
-  background-size: 370px 500px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  height: 90vh;
+  height: 700px;
   background-color: hsl(256, 26%, 20%);
   color: #fff;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/bg-pattern-intro-right-desktop.svg);
+  background-size: 380px 500px;
+  width: 380px;
+  height: 500px;
+  background-repeat: no-repeat;
 }
 
 .hero_leadText {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  margin-top: -120px;
 }
 .hero_leadText h1 {
   font-size: 80px;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   line-height: 1;
+  position: relative;
+  margin: 45px 0;
 }
+
+.hero_leadText h1::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  height: 1px;
+  width: 100px;
+  background: hsl(273, 4%, 51%);
+}
+
 .hero_leadText p {
   font-family: "Karla", sans-serif;
   line-height: 1.4;
   font-size: 18px;
 }
 .hero_leadImage {
-  padding-top: 50px;
+  padding-top: 125px;
 }
 
 .btn {
@@ -75,18 +102,92 @@ ul.list-inline li {
   padding: 10px 15px;
   border: 1px solid #000;
   font-family: "Karla", sans-serif;
+  font-size: 18px;
+}
+
+.btn-white-outline {
+  border-color: #fff;
+  color: #fff;
 }
 
 #about-us {
-  margin: 270px 0;
+  margin: 270px 0 190px 0;
+  position: relative;
 }
+
+#about-us::before {
+  content: '';
+  position: absolute;
+  top: -460px;
+  left: 0;
+  background: url(../images/bg-pattern-intro-left-desktop.svg);
+  background-size: 160px 480px;
+  width: 160px;
+  height: 480px;
+  background-repeat: no-repeat;
+}
+
+#about-us h1 {
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  position: relative;
+}
+
+#about-us h1::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  height: 1px;
+  width: 100px;
+  background: hsl(273, 4%, 51%);
+}
+
 #about-us .d-flex .item {
   flex-grow: 1;
 }
 #about-us .d-flex .item:nth-of-type(2) {
   margin: 0 10px;
 }
+#find-out-more {
+  margin-bottom: 70px;
+}
+#find-out-more .container {
+  background-color: hsl(256, 26%, 20%);
+  padding: 10px 60px;
+  position: relative;
+  color: #fff;
+  align-items: center;
+}
 
+#find-out-more .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/bg-pattern-how-we-work-desktop.svg);
+  background-size: 380px 100%;
+  width: 380px;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#find-out-more h1 {
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#find-out-more button {
+  border-color: #fff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 2;
+}
 footer {
   background-color: #fafafa;
   padding: 50px 0;
