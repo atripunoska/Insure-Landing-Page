@@ -87,12 +87,62 @@ ul.list-inline li {
   margin: 0 10px;
 }
 
+footer {
+  background-color: #fafafa;
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/bg-pattern-footer-desktop.svg);
+  background-size: 450px 195px;
+  width: 450px;
+  height: 195px;
+  z-index: -1;
+}
 .footer-logo {
-  width: 150px;
+  height: 20px;
 }
 
 footer .column {
   flex-grow: 1;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul > li > a {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer ul > li {
+  padding-bottom: 10px;
+}
+
+footer h6.title {
+  color: hsl(273, 4%, 51%);
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 40px 0;
+}
+
+footer .list-inline > li > img {
+  padding: 0 5px;
+}
+footer .list-inline > li:last-child > img {
+  padding: 0 0px 0 5px;
 }
 @media (max-width: 1600px) {
   .container {
